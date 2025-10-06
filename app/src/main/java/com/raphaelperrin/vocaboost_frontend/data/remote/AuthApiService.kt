@@ -7,7 +7,8 @@ import com.google.gson.annotations.SerializedName
 data class BackendUserResponse(
     val id: String,
     val username: String,
-    val email: String
+    val email: String,
+    val pictureUrl: String
 )
 
 data class GoogleTokenDto(

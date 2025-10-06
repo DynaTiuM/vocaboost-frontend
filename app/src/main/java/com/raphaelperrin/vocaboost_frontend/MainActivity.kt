@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.raphaelperrin.vocaboost_frontend.ui.screens.LoginRoute
+import com.raphaelperrin.vocaboost_frontend.ui.VocaboostApp
 import com.raphaelperrin.vocaboost_frontend.ui.theme.VocaboostfrontendTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,12 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LoginRoute(
-                        onLoginSuccess = { user ->
-                            // TODO: Handle successful login
-                            println("Login successful for user: ${user.username}")
-                        }
-                    )
+                    VocaboostApp()
                 }
             }
         }
